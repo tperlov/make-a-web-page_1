@@ -1,0 +1,52 @@
+body {
+	box-sizing: border-box;
+	border-radius: 40px;
+	padding: 20px;
+	margin: 10px;
+}
+
+.stage-gen {
+	background-color: white;
+	border-style: solid;
+	border-radius: inherit;
+	padding: inherit;
+	margin: inherit;
+}
+
+.content {
+	border-radius: inherit;
+	margin-top: inherit;
+	margin-bottom: inherit;
+	padding:inherit;
+}
+
+.stage-11 {
+	border-color: #00a6ff;
+}
+
+.html{
+	background-color: #bde8ff;
+}
+
+.puppies {
+	display:block;
+	max-width: 25%;
+	margin:0 auto;
+}
+
+.stage-12 {
+	border-color: #00fbff;
+}
+
+.structure {
+	background-color: #ccfeff;
+}
+
+.stage-13 {
+	border-color: #00ff08;
+}
+
+.css {
+	background-color: #ccfff2;
+}
+

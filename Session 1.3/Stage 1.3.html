@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style13.css">
+  <title>Introduction to Programming</title>
+</head>
+
+<body>
+  <div class="stage-11 stage-gen">
+    <h1>Stage 1.1</h1>
+    <div class="html content">
+      <h3>What is the World Wide Web?</h3>
+      <p>
+          The World Wide Web is comprised of billions of HTML pages. It contains every kind of file you can think of. The World Wide Web is comprised of your browser, which connects to the Internet by communicating with servers using a protocol called HTTP.
+          Servers are just computers and HTTP is just a protocol that your browser uses to communicate with the server.
+      </p>
+      <p>
+          HTTP (HyperText Markup Language) -The main protocol of the web
+          <br> Servers - Computers that host the files that make up the web
+          <br> Internet - the world&#39;s largest computer network.
+          <br> Browser - a program that runs on your computer to display files found on the web
+      </p>
+    </div>
+    <div class="html content">
+      <h3>Basics of HTML</h3>
+      <h4>HTML Tags</h4>
+      <p>
+       Tags are instructions on how your page should be structured and are obvious within the code as they are enclosed in &quot;&lt;&gt;&quot;. Text after a tag is affected all the way through until a closing tag is hit &quot;&lt;&#47; &gt;&quot;. Below are some examples. 
+      </p>
+      <p>
+        &lt;b&gt; is a tag that indicates anything enclosed should be <b>bold</b>.
+        <br>
+        &lt;em&gt; indicates <em>italic</em> text.
+        <br>
+        &lt;p&gt; is a tag which creates something like a paragraph structure.
+        <br>
+        &lt;br&gt; creates a line break. This tag is unique because it doesn't have any contents and therefore does not require a closing tag.
+      </p>
+      <h4>Attributes</h4>
+      <p>
+        Some tags have attributes, which in turn have values. For example
+        <br>
+        <br> The &lt;a&gt; tag is called an anchor tag and it's how we add in links. The &lt;a&gt; tag has an <em>href</em> attribute which has a URL value. Between the opening tag and the closing tag is the text which appears hyperlinked. For example I can say, "Dear reader, go visit &lt;a href="http://www.reddit.com"&gt;reddit&lt;a&gt;." and it will look simply show 
+        <br><br>
+        "Dear reader, go visit <a href="www.reddit.com">reddit</a>."
+        <br>
+        <br>Another example uses the &lt;img&gt; tag to insert images. This tag has two attributes called <em>src</em> and <em>alt</em>. <em>src</em> has a URL value just like href meanwhile <em>alt</em> gives you a word description which is displayed when the image is not loaded and can be used for special settings such as those for the blind. For example, here is an &lt;img src="http://my10online.com/wp-content/uploads/2011/09/4480604.jpg" alt="Puppies"&gt;. This tag is another example of a tag that doesn't have text contents and therefore doesn't require a closing tag. <br>
+        <br>
+        Done right, the above will look something like this:<br><br>
+        <img class="puppies" src="http://my10online.com/wp-content/uploads/2011/09/4480604.jpg" alt="Puppies">
+      </p>
+    </div>
+    <div class="html content">
+      <h3>Inline vs. Block Elements</h3>
+      <p>
+        <em>Inline</em> elements are tags that create inline (within the text) formatting.  <br>
+        Examples include &lt;b&gt;, &lt;em&gt;, &lt;br&gt;,and &lt;img&gt;. 
+        Another tag that falls into this category is &lt;span&gt; which is a container tag.
+        <br><br> 
+        <em>Block</em> elements are elements that create a virtual box around its contents. 
+        Examples include &lt;p&gt; which creates a block around the paragraph, and &lt;div&gt;which creates a block around the contents and is the block counterpart to the inline element &lt;span&gt;.
+      </p>
+  </div>
+</div>
+  <div class="stage-12 stage-gen">
+    <h1>Stage 1.2</h1>
+    <div class="structure content">
+      <h3>Boxifying</h3>  
+      <p> 
+        <em>Boxifying</em> is apparently the technical term for separating elements on a page into compartments. Any page of content can be split up into smaller blocks and sub-blocks. Each of these blocks can be placed into a container like &lt;div&gt;. This skill can be practiced by either drawing boxes around each element or even by printing the page and cutting the blocks out. Even shapes like circles are really just blocks.
+      </p>
+    </div>
+    <div class="structure content">
+      <h3>HTML Structure</h3>
+      <p>
+        Aside from <em>boxifying</em>, you can also think of an HTML document as having a tree like structure. You can see this structure by following the indentations along the left end of the HTML code. For example, many trees will start with a &lt;body&gt; and the next line will have an indented element. This element is the next branch of the tree. Multiple &lt;div&gt; sections can be either along the same branch or they can be two separate limbs of the tree. 
+      </p>  
+    </div>
+  </div>
+  <div class="stage-13 stage-gen">
+    <h1>Stage 1.3</h1>
+    <div class="css content">
+        <h3>What is CSS?</h3>
+        <p> 
+          CSS stands for Cascading Style Sheets and allows to add style to the html structure. Style means anything like color, formatting, shapes, or location of elements on a page.
+        </p>
+    </div>
+    <div class="css content">
+        <h3>How to use CSS</h3>
+        <p>
+          When dealing with CSS it's important to consider your HTML structure. Giving yours &lt;div&gt;'s a class name makes it possible to attach a style to that specific div. <br>
+          For example, given &lt;div class="stuff"&gt;, you could add in a style by specifying in your CSS file the <em>selector</em>, an element type, or by using the class name followed by the attribute and the appropriate value. 
+          <br><br>
+            div { <br>
+            color: red;<br>
+            }
+          <br><br>
+        or
+          <br><br>
+            .stuff { <br>
+            color: red;<br>
+            }
+          <br><br>
+        and this would make all the text in that &lt;div&gt; red in color. You can also insert the CSS styling right into your html sheet using the &lt;style&gt; tag. 
+        </p> 
+    </div>
+    <div class="css content">
+      <h3>The Box Model</h3>
+      <p>
+        Boxifying was a term discussed earlier in Stage 1.2 but when we think of a simple box we miss all the elements that make it possible to configure how the content in the box will sit with respect to the box or how other boxes on the page will sit with respect to each other or to the page. For better handling, boxes come with 4 component: <em>content, padding, margin,</em> and <em>border</em>. To make these components easy to understand let's compare it to a peice of paper on a desk.
+      </p>
+      <p>
+        Imagine that you have a peice of paper. The size of this paper is your <em>border</em>. On this paper you have some scribbles which we will call the <em>content</em>. The space between your scribbles and the edges of the paper is your <em>padding</em> and the space between the edges of your paper and the edge of your desk is the <em>margin</em>.
+      </p>
+    </div>  
+    <div class="css content">
+      <h3>Specialty Attributes</h3>
+      <p>
+        box-sizing:
+      </p>
+      <p>
+        display: flex;
+      </p>
+    </div>  
+    <div class="css content">
+      <h3>Reducing Repetition</h3>
+      <p>
+        It is important to avoid repetition. Not only does it create more reasable code but it reduces the amount of work required each time a change is needed. There are a couple ways to achieve this. The first is to use class names for multiple div's that are styled the same. Another option is to have multiple class names. 
+      </p>
+    </div>  
+    <div class="css content">
+      <h3>Extra Resources</h3>
+      <p>
+        CSS is a powerful tool and that means there are so many attributes to pick from. Memorizing is inefficient and unnecessary. The following <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">link</a> is a useful resource where you can look up all CSS attributes and their corresponding values.
+        <br><br>
+        Another useful website goes through the various <a href="https://css-tricks.com/how-css-selectors-work/">selectors </a>when using CSS. 
+      </p>
+      <p>
+        There are also two links below that lead to code validation tools. The first is for validating your 
+        <a href="http://validator.w3.org/#validate_by_input"> HTML Code </a>
+        <br><br>
+        And the secon link allows you to validate your <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS code</a>.
+    </div>
+  </div>     
+</body>
+</html>
